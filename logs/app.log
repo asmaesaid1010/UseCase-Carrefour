@@ -1,0 +1,547 @@
+2026-03-06T00:01:16.931Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Starting CabinetMedicalServiceApplication using Java 21.0.9 with PID 20332 (C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service\target\classes started by asmsaid in C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service)
+2026-03-06T00:01:16.945Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : The following 1 profile is active: "local"
+2026-03-06T00:01:17.015Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-06T00:01:17.017Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-06T00:01:18.138Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-06T00:01:18.242Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+2026-03-06T00:01:18.908Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-06T00:01:18.929Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-06T00:01:18.930Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-06T00:01:19.012Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1993 ms
+2026-03-06T00:01:19.265Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-06T00:01:19.378Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-06T00:01:20.161Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-06T00:01:20.228Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T00:01:20.628Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e048e33
+2026-03-06T00:01:20.630Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T00:01:20.694Z  WARN 20332 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-06T00:01:20.731Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/cabinet_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: cabinet_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-06T00:01:23.121Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-06T00:01:23.250Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:01:23.410Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-06T00:01:25.591Z  WARN 20332 --- [CabinetMedical-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-06T00:01:26.768Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-06T00:01:26.781Z  INFO 20332 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Started CabinetMedicalServiceApplication in 10.473 seconds (process running for 11.585)
+2026-03-06T00:01:26.787Z  WARN 20332 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-06T00:01:26.788Z  WARN 20332 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-06T00:03:22.993Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-06T00:03:22.994Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-06T00:03:22.997Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-06T00:03:24.892Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1557 ms
+2026-03-06T00:03:33.763Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.c.web.SpecialiteController             : [SPECIALITE] Lecture — id=1
+2026-03-06T00:03:33.778Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.c.service.Impl.SpecialiteServiceImpl   : Récupération de la spécialité — ID=1
+2026-03-06T00:04:00.997Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-4] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Listing paginé demandé.
+2026-03-06T00:04:01.126Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-4] c.cabinetmedical.web.CreneauController   : [CRENEAU] Listing OK — totalElements=0, page=0/0
+2026-03-06T00:07:26.407Z ERROR 20332 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.c.config.GlobalExceptionHandler        : 500 Internal Server Error: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2026-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2026-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2026-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2026-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String "2026-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2026-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #24] (through reference chain: com.cabinetmedical.dto.CreneauDTO["debut"])
+	at tools.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:37) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:2018) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1354) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.JSR310DeserializerBase._handleDateTimeFormatException(JSR310DeserializerBase.java:179) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:207) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:101) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:36) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:561) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:752) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:598) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1417) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:480) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+Caused by: java.time.format.DateTimeParseException: Text '2026-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2111) ~[na:na]
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010) ~[na:na]
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494) ~[na:na]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:205) ~[jackson-databind-3.0.4.jar:3.0.4]
+	... 58 common frames omitted
+
+2026-03-06T00:07:26.424Z  WARN 20332 --- [CabinetMedical-service] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2026-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2026-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19]
+2026-03-06T00:11:27.273Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création demandée — medecinId=3, début=2026-03-10T09:00, fin=2026-03-10T09:30
+2026-03-06T00:11:27.275Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Création demandée — medecinId=3, début=2026-03-10T09:00, fin=2026-03-10T09:30
+2026-03-06T00:11:27.380Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Créneau créé — id=1, medecinId=3
+2026-03-06T00:11:27.402Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création réussie — creneauId=1, medecinId=3
+2026-03-06T00:12:00.073Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Listing paginé demandé.
+2026-03-06T00:12:00.112Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.cabinetmedical.web.CreneauController   : [CRENEAU] Listing OK — totalElements=1, page=0/1
+2026-03-06T00:12:48.303Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création demandée — medecinId=3, début=2027-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:12:48.305Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Création demandée — medecinId=3, début=2027-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:12:48.333Z ERROR 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] c.c.config.GlobalExceptionHandler        : 500 Internal Server Error: Creneau.fin doit être après Creneau.debut
+
+org.springframework.dao.InvalidDataAccessApiUsageException: Creneau.fin doit être après Creneau.debut
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:461) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.translateExceptionIfPossible(HibernateExceptionTranslator.java:112) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:223) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:576) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:346) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:157) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy152.save(Unknown Source) ~[na:na]
+	at com.cabinetmedical.service.Impl.CreneauServiceImpl.addCreneauWithMedecin(CreneauServiceImpl.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.5.jar:7.0.5]
+	at com.cabinetmedical.service.Impl.CreneauServiceImpl$$SpringCGLIB$$0.addCreneauWithMedecin(<generated>) ~[classes/:na]
+	at com.cabinetmedical.web.CreneauController.addCreneauWithMedecin(CreneauController.java:48) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.5.jar:7.0.5]
+	at com.cabinetmedical.web.CreneauController$$SpringCGLIB$$0.addCreneauWithMedecin(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.IllegalStateException: Creneau.fin doit être après Creneau.debut
+	at com.cabinetmedical.domain.Creneau.validate(Creneau.java:63) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.hibernate.jpa.event.internal.EntityCallback.performCallback(EntityCallback.java:55) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.event.internal.CallbackRegistryImpl.callback(CallbackRegistryImpl.java:117) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.event.internal.CallbackRegistryImpl.preCreate(CallbackRegistryImpl.java:66) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:195) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:133) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:145) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:89) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:73) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:49) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:689) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:672) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy148.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityHandlerInvocationHandler.invokeMethod(SharedEntityManagerCreator.java:240) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:386) ~[spring-orm-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy148.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:664) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.5.jar:7.0.5]
+	... 70 common frames omitted
+
+2026-03-06T00:12:48.342Z  WARN 20332 --- [CabinetMedical-service] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Creneau.fin doit être après Creneau.debut]
+2026-03-06T00:13:03.280Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création demandée — medecinId=4, début=2027-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:13:03.281Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Création demandée — medecinId=4, début=2027-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:13:03.287Z  WARN 20332 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.c.config.GlobalExceptionHandler        : 404 Not Found: Médecin non trouvé avec l'ID : 4
+2026-03-06T00:13:03.290Z  WARN 20332 --- [CabinetMedical-service] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cabinetmedical.exception.RessourceNotFoundException: Médecin non trouvé avec l'ID : 4]
+2026-03-06T00:13:28.939Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-3] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création demandée — medecinId=3, début=2026-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:13:28.949Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-3] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Création demandée — medecinId=3, début=2026-04-10T09:00, fin=2026-04-10T09:30
+2026-03-06T00:13:28.959Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-3] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Créneau créé — id=2, medecinId=3
+2026-03-06T00:13:28.961Z  INFO 20332 --- [CabinetMedical-service] [http-nio-8081-exec-3] c.cabinetmedical.web.CreneauController   : [CRENEAU] Création réussie — creneauId=2, medecinId=3
+2026-03-06T00:14:25.116Z  INFO 20332 --- [CabinetMedical-service] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-06T00:14:25.121Z  INFO 20332 --- [CabinetMedical-service] [RMI TCP Connection(15)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-06T00:14:25.132Z  INFO 20332 --- [CabinetMedical-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-06T00:14:25.138Z  INFO 20332 --- [CabinetMedical-service] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:14:25.144Z  INFO 20332 --- [CabinetMedical-service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T00:14:25.149Z  INFO 20332 --- [CabinetMedical-service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T00:27:02.673Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Starting CabinetMedicalServiceApplication using Java 21.0.9 with PID 17136 (C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service\target\classes started by asmsaid in C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service)
+2026-03-06T00:27:02.676Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : The following 1 profile is active: "local"
+2026-03-06T00:27:02.784Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-06T00:27:02.784Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-06T00:27:04.121Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-06T00:27:04.213Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2026-03-06T00:27:04.804Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-06T00:27:04.844Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-06T00:27:04.844Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-06T00:27:04.922Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2137 ms
+2026-03-06T00:27:05.158Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-06T00:27:05.270Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-06T00:27:06.141Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-06T00:27:06.212Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T00:27:06.698Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d6d19d6
+2026-03-06T00:27:06.701Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T00:27:06.771Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-06T00:27:06.814Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/cabinet_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: cabinet_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-06T00:27:08.747Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-06T00:27:08.897Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:27:09.009Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-06T00:27:10.643Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-06T00:27:11.321Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-06T00:27:11.333Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Started CabinetMedicalServiceApplication in 9.242 seconds (process running for 10.258)
+2026-03-06T00:27:11.337Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-06T00:27:11.338Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-06T00:27:37.928Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-06T00:27:37.929Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-06T00:27:37.933Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-06T00:27:39.345Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1013 ms
+2026-03-06T00:27:58.276Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Listing paginé demandé.
+2026-03-06T00:27:58.590Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.cabinetmedical.web.CreneauController   : [CRENEAU] Listing OK — totalElements=2, page=0/1
+2026-03-06T00:30:58.807Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout demandé — specialiteId=2, nom='Omar Alaoui'
+2026-03-06T00:30:58.809Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.c.service.Impl.MedecinServiceImpl      : Ajout d'un médecin à la spécialité — ID=2
+2026-03-06T00:30:58.873Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.c.service.Impl.MedecinServiceImpl      : Médecin ajouté avec succès — ID=4
+2026-03-06T00:30:58.886Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout réussi — medecinId=4, specialiteId=2
+2026-03-06T00:31:57.021Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout demandé — specialiteId=4, nom='Salma Bennani'
+2026-03-06T00:31:57.023Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.c.service.Impl.MedecinServiceImpl      : Ajout d'un médecin à la spécialité — ID=4
+2026-03-06T00:31:57.044Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.c.config.GlobalExceptionHandler        : 404 Not Found: Spécialité non trouvée avec l'ID :  4
+2026-03-06T00:31:57.052Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cabinetmedical.exception.RessourceNotFoundException: Spécialité non trouvée avec l'ID :  4]
+2026-03-06T00:32:04.671Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout demandé — specialiteId=3, nom='Salma Bennani'
+2026-03-06T00:32:04.681Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.c.service.Impl.MedecinServiceImpl      : Ajout d'un médecin à la spécialité — ID=3
+2026-03-06T00:32:04.700Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.c.service.Impl.MedecinServiceImpl      : Médecin ajouté avec succès — ID=5
+2026-03-06T00:32:04.702Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout réussi — medecinId=5, specialiteId=3
+2026-03-06T00:32:17.147Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout demandé — specialiteId=1, nom='Amine Touil'
+2026-03-06T00:32:17.149Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.c.service.Impl.MedecinServiceImpl      : Ajout d'un médecin à la spécialité — ID=1
+2026-03-06T00:32:17.164Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.c.service.Impl.MedecinServiceImpl      : Médecin ajouté avec succès — ID=6
+2026-03-06T00:32:17.166Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-1] c.cabinetmedical.web.MedecinController   : [MEDECIN] Ajout réussi — medecinId=6, specialiteId=1
+2026-03-06T00:32:33.545Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-2] c.c.service.Impl.MedecinServiceImpl      : Récupération paginée des médecins
+2026-03-06T00:32:33.575Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-2] c.cabinetmedical.web.MedecinController   : [MEDECIN] Listing OK — éléments=4, page=0/1
+2026-03-06T00:33:05.110Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-3] c.c.config.GlobalExceptionHandler        : 400 Bad Request (validation): id L'id ne doit pas être fourni en création
+2026-03-06T00:33:05.112Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.cabinetmedical.dto.SpecialiteDTO> com.cabinetmedical.web.SpecialiteController.addSpecialite(com.cabinetmedical.dto.SpecialiteDTO): [Field error in object 'specialiteDTO' on field 'id': rejected value [0]; codes [Null.specialiteDTO.id,Null.id,Null.java.lang.Long,Null]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [specialiteDTO.id,id]; arguments []; default message [id]]; default message [L'id ne doit pas être fourni en création]] ]
+2026-03-06T00:33:17.303Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-4] c.c.web.SpecialiteController             : [SPECIALITE] Liste — page=0, size=10, tri=code-asc
+2026-03-06T00:33:38.346Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.c.web.SpecialiteController             : [SPECIALITE] Lecture — id=1
+2026-03-06T00:33:38.348Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-5] c.c.service.Impl.SpecialiteServiceImpl   : Récupération de la spécialité — ID=1
+2026-03-06T00:33:54.491Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-6] c.c.web.SpecialiteController             : [SPECIALITE] Recherche par code — 'CARDIO'
+2026-03-06T00:34:41.866Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-7] c.c.service.Impl.CreneauServiceImpl      : [CRENEAU] Listing paginé demandé.
+2026-03-06T00:34:41.877Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-7] c.cabinetmedical.web.CreneauController   : [CRENEAU] Listing OK — totalElements=2, page=0/1
+2026-03-06T00:35:26.064Z ERROR 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] c.c.config.GlobalExceptionHandler        : 500 Internal Server Error: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #25] (through reference chain: com.cabinetmedical.dto.CreneauDTO["debut"])
+	at tools.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:37) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:2018) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1354) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.JSR310DeserializerBase._handleDateTimeFormatException(JSR310DeserializerBase.java:179) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:207) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:101) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:36) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:561) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:752) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:598) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1417) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:480) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+Caused by: java.time.format.DateTimeParseException: Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2111) ~[na:na]
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010) ~[na:na]
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494) ~[na:na]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:205) ~[jackson-databind-3.0.4.jar:3.0.4]
+	... 58 common frames omitted
+
+2026-03-06T00:35:26.084Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19]
+2026-03-06T00:35:55.710Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.cabinetmedical.web.MedecinController   : [MEDECIN] Consultation — medecinId=4
+2026-03-06T00:35:55.712Z  INFO 17136 --- [CabinetMedical-service] [http-nio-8081-exec-9] c.c.service.Impl.MedecinServiceImpl      : Récupération du médecin — ID=4
+2026-03-06T00:36:29.452Z ERROR 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] c.c.config.GlobalExceptionHandler        : 500 Internal Server Error: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #25] (through reference chain: com.cabinetmedical.dto.CreneauDTO["debut"])
+	at tools.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:37) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:2018) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1354) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.JSR310DeserializerBase._handleDateTimeFormatException(JSR310DeserializerBase.java:179) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:207) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:101) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:36) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:561) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:752) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:598) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1417) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:480) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+Caused by: java.time.format.DateTimeParseException: Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2111) ~[na:na]
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010) ~[na:na]
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494) ~[na:na]
+	at tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:205) ~[jackson-databind-3.0.4.jar:3.0.4]
+	... 58 common frames omitted
+
+2026-03-06T00:36:29.456Z  WARN 17136 --- [CabinetMedical-service] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2024-03-06T00:04:10.866Z": Failed to deserialize `java.time.LocalDateTime` (with format 'Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'T'Value(HourOfDay,2)':'Value(MinuteOfHour,2)':'Value(SecondOfMinute,2)'): (java.time.format.DateTimeParseException) Text '2024-03-06T00:04:10.866Z' could not be parsed, unparsed text found at index 19]
+2026-03-06T00:37:55.924Z  INFO 17136 --- [CabinetMedical-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-06T00:37:55.931Z  INFO 17136 --- [CabinetMedical-service] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-06T00:37:55.946Z  INFO 17136 --- [CabinetMedical-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-06T00:37:55.954Z  INFO 17136 --- [CabinetMedical-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:37:55.960Z  INFO 17136 --- [CabinetMedical-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T00:37:56.010Z  INFO 17136 --- [CabinetMedical-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T00:37:56.399Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Starting CabinetMedicalServiceApplication using Java 21.0.9 with PID 17136 (C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service\target\classes started by asmsaid in C:\Users\asmsaid\Eclipse-workspace-carrefour\CabinetMédical-service)
+2026-03-06T00:37:56.400Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : The following 1 profile is active: "local"
+2026-03-06T00:37:58.042Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-06T00:37:58.176Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 5 JPA repository interfaces.
+2026-03-06T00:37:58.341Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-06T00:37:58.342Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-06T00:37:58.344Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-06T00:37:58.397Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1968 ms
+2026-03-06T00:37:58.456Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-06T00:37:58.514Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-06T00:37:58.518Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-06T00:37:58.694Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@923590a
+2026-03-06T00:37:58.694Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-06T00:37:58.709Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-06T00:37:58.720Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/cabinet_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: cabinet_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-06T00:37:58.969Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-06T00:37:59.045Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:37:59.486Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-06T00:38:00.016Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-06T00:38:00.022Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] c.c.CabinetMedicalServiceApplication     : Started CabinetMedicalServiceApplication in 3.787 seconds (process running for 658.948)
+2026-03-06T00:38:00.024Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-06T00:38:00.024Z  WARN 17136 --- [CabinetMedical-service] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-06T00:38:00.026Z  INFO 17136 --- [CabinetMedical-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-06T00:38:00.639Z  INFO 17136 --- [CabinetMedical-service] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-06T00:38:00.640Z  INFO 17136 --- [CabinetMedical-service] [RMI TCP Connection(14)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-06T00:38:00.850Z  INFO 17136 --- [CabinetMedical-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-06T00:38:00.862Z  INFO 17136 --- [CabinetMedical-service] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-06T00:38:00.865Z  INFO 17136 --- [CabinetMedical-service] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-06T00:38:00.930Z  INFO 17136 --- [CabinetMedical-service] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
