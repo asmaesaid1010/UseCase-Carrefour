@@ -1,11 +1,14 @@
-##🩺 Cabinet Médical – Microservice de gestion des Médecins, Spécialités, Patients, Créneaux & Rendez‑vous
+## 🩺 Cabinet Médical – Microservice de gestion des Médecins, Spécialités, Patients, Créneaux & Rendez‑vous
+```plaintext
 Ce projet est un microservice Spring Boot (Java 21) pour gérer :
 	- Les médecins et leurs spécialités
 	- Les patients
 	- Les créneaux horaires (disponibilités)
 	- Les rendez‑vous (réservation d’un créneau par un patient)
+```
 
-##Technologies Utilisées 
+## Technologies Utilisées 
+```plaintext
 - Java 21
 - Spring Boot
 - Spring Data JPA / Hibernate
@@ -15,171 +18,183 @@ Ce projet est un microservice Spring Boot (Java 21) pour gérer :
 - Maven
 - Validation Jakarta
 - Git & GitHub
-  
-##Architecture du Projet
-
-```plaintext
-com.asmae.garage
-├── config # GlobalEception handler, Swagger…
-├── dto #  
-├── validation #  
-├── exception # Exceptions personnalisée
-├── mapper # Mappers Entity <-> DTO
-├── model #    
-├── model.enums #    
-├── repository # Interfaces JPA
-├── service # Logique métier + validations
-├── service.impl
-├── utils # Data Transfer Objects
-├── controller # REST Controllers
-└── GarageServiceApplication.java
 ```
 
-##Démarrer le Projet 
+## Architecture du Projet
 ```plaintext
-Lancer l’application :bash mvn spring-boot:run 
-Application disponible sur : 👉 http://localhost:8081 
+src/
+ └── main/
+     └── java/
+         └── com.asmae.cabinetmedical
+            ├── config               # GlobalExceptionHandler, Swagger.
+            ├── web                  # REST Controllers
+            ├── service              # Interfaces service
+            |   └── impl             # Logique métier + @Transactional
+            ├── repository           # Spring Data JPA
+            ├── model                # Entités JPA
+            |    └── enums           # Enums (statut RDV...)
+            ├── dto                  # DTOs + validations
+            ├── validation           # Groupes (OnCreate, OnUpdate)
+            ├── mapper               # MapStruct mappers
+            ├── exception            # Exceptions personnalisées
+            ├── utils                # Constantes (messages, logs)
+            └── CabinetMedicalServiceApplication.java  # Classe principale
+    └── resources/
+         └── application.yml
+```
+		 
+## Démarrer le Projet 
+```plaintext
+Lancer l’application : mvn spring-boot:run
+
+Application disponible sur : 👉 http://localhost:8081
+
 Swagger UI : 👉 http://localhost:8081/swagger-ui.html 
-```<img width="1030" height="1207" alt="image" src="https://github.com/user-attachments/assets/cbecbfae-7102-4ed2-af23-82102ee67a39" />
+```
 
-##📌 Endpoints Cabinet Médical
+## Endpoints Cabinet Médical
 
-###🩺 Endpoints Médecins
-
+### Endpoints Médecins
+```plaintext
 ▶️ Obtenir un médecin
+
 **GET** `/api/v1/medecins/{id}`  
-Retourne les informations d’un médecin spécifique.
 
 ▶️ Mettre à jour un médecin  
+
 **PUT** `/api/v1/medecins/{id}`  
-Met à jour les informations d’un médecin.
 
 ▶️ Supprimer un médecin  
-**DELETE** `/api/v1/medecins/{id}`  
-Supprime un médecin par ID.
+
+**DELETE** `/api/v1/medecins/{id}`
 
 ▶️ Lister les médecins  
+
 **GET** `/api/v1/medecins`  
-Retourne une liste paginée et triée de tous les médecins.
 
 ▶️ Ajouter un médecin à une spécialité  
+
 **POST** `/api/v1/medecins/specialites/{specialiteId}`  
-Ajoute un médecin dans la spécialité indiquée.
-
-###🧬 Endpoints Spécialités
-
+```
+### Endpoints Spécialités
+```plaintext
 ▶️ Obtenir une spécialité par ID
+
 **GET** `/api/v1/specialites/{id}`  
-Retourne les informations d’une spécialité.
 
 ▶️ Modifier une spécialité  
+
 **PUT** `/api/v1/specialites/{id}`  
-Met à jour une spécialité existante.
 
 ▶️ Supprimer une spécialité  
+
 **DELETE** `/api/v1/specialites/{id}`  
-Supprime une spécialité par ID.
 
 ▶️ Liste paginée des spécialités  
+
 **GET** `/api/v1/specialites`  
-Retourne la liste paginée et triée des spécialités.
 
 ▶️ Créer une spécialité  
+
 **POST** `/api/v1/specialites`  
-Crée une nouvelle spécialité.
 
 ▶️ Rechercher une spécialité par code  
+
 **GET** `/api/v1/specialites/code/{codeName}`  
-Recherche une spécialité selon son code.
-
-###🧑‍⚕️ Endpoints Patients
-
+```
+### Endpoints Patients
+```plaintext
 ▶️ Obtenir un patient par ID
+
 **GET** `/api/v1/patients/{id}`  
-Retourne les informations d’un patient.
 
 ▶️ Mettre à jour un patient  
+
 **PUT** `/api/v1/patients/{id}`  
-Met à jour un patient existant.
 
 ▶️ Supprimer un patient  
+
 **DELETE** `/api/v1/patients/{id}`  
-Supprime un patient par ID.
 
 ▶️ Liste paginée des patients  
+
 **GET** `/api/v1/patients`  
-Retourne la liste paginée des patients.
 
 ▶️ Créer un patient  
+
 **POST** `/api/v1/patients`  
-Ajoute un nouveau patient.
 
 ▶️ Rechercher un patient par email  
+
 **GET** `/api/v1/patients/email/{email}`  
-Retourne un patient selon son email.
-
-###🕒 Endpoints Créneaux (Disponibilités)
-
+```
+### Endpoints Créneaux (Disponibilités)
+```plaintext
 ▶️ Obtenir un créneau
+
 **GET** `/api/v1/creneaux/{id}`  
-Retourne un créneau selon son ID.
 
 ▶️ Mettre à jour un créneau  
+
 **PUT** `/api/v1/creneaux/{id}`  
-Met à jour un créneau (début, fin, actif).
 
 ▶️ Supprimer un créneau  
+
 **DELETE** `/api/v1/creneaux/{id}`  
-Supprime un créneau par ID.
 
 ▶️ Créer un créneau pour un médecin  
+
 **POST** `/api/v1/creneaux/medecins/{medecinId}`  
-Crée un créneau associé à un médecin.
 
 ▶️ Désactiver un créneau  
+
 **PATCH** `/api/v1/creneaux/{id}/desactiver`  
-Désactive un créneau.
 
 ▶️ Activer un créneau  
+
 **PATCH** `/api/v1/creneaux/{id}/activer`  
-Réactive un créneau.
 
 ▶️ Lister tous les créneaux  
+
 **GET** `/api/v1/creneaux`  
-Retourne la liste paginée des créneaux.
 
 ▶️ Lister les créneaux d’un médecin  
-**GET** `/api/v1/creneaux/by-medecin/{medecinId}`  
-Retourne les créneaux disponibles d’un médecin.
 
-###📅 Endpoints Rendez-vous
-
+**GET** `/api/v1/creneaux/by-medecin/{medecinId}`
+```
+### Endpoints Rendez-vous
+```plaintext
 ▶️ Obtenir un rendez-vous
+
 **GET** `/api/v1/rendezvous/{id}`  
-Retourne les informations d’un rendez-vous.
 
 ▶️ Mettre à jour un rendez-vous  
-**PUT** `/api/v1/rendezvous/{id}`  
-Met à jour le statut ou les informations du rendez-vous.
 
-▶️ Supprimer un rendez-vous  
+**PUT** `/api/v1/rendezvous/{id}`  
+
+▶️ Supprimer un rendez-vous 
+
 **DELETE** `/api/v1/rendezvous/{id}`  
-Supprime un rendez-vous par ID.
 
 ▶️ Réserver un créneau  
+
 **POST** `/api/v1/rendezvous/reserver/patients/{patientId}/creneaux/{creneauId}`  
-Réserve un créneau pour un patient (un seul RDV par créneau).
 
 ▶️ Historiser en NON_PRESENT  
+
 **PATCH** `/api/v1/rendezvous/{id}/non-present`  
 
 ▶️ Historiser en HONORE  
+
 **PATCH** `/api/v1/rendezvous/{id}/honorer`  
 
 ▶️ Annuler un rendez-vous  
+
 **PATCH** `/api/v1/rendezvous/{id}/annuler`  
 
-▶️ Lister tous les rendez-vous  
-**GET** `/api/v1/rendezvous`  
-Retourne la liste paginée des rendez-vous.
+▶️ Lister tous les rendez-vous
+
+**GET** `/api/v1/rendezvous`
+```
+
 
